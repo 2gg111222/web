@@ -1,0 +1,94 @@
+2날 ppt 13p `14p 16p중요
+16p 특히 중요
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 메일페이지</title>
+    <link rel="stylesheet" href="out.css">
+    <style>
+        a {
+                /* 기본선택자 -- 태그명 */
+            color: white; background: lime; 
+            width: 200px; height: 100px;
+            display: inline-block;
+            /* a태그 자체가 연결하려는 태그라서 크기 조정을 못함
+            그래서 한줄표현되는 인라인 태그의 대표적인 주자가 a태그임 
+            따라서 가로세로 지정을 위해서블록형태로 가져가게 설정을 해야함 
+            인라인 - 한줄표현, 블록 - 가로, 세로 크기 가져가는 형태
+            */
+        }
+    </style>
+</head>
+<!-- head 부분은 웹사이트 윗부분 설정창 쪽 -->
+<!-- crtl + b 누르면 explorer 칸 없에거나 살림 -->
+<body>
+    
+    <a href="mail.html">mail 페이지로</a>
+    <a href="cafe.html">cafe 페이지로</a>
+    <a href="news.html">news 페이지로</a>
+    <hr color="pink" style="width: 300px;">
+    네이버 메일 페이지입니다.
+    /*네이버 메일페이지 입니다.만 바꾸려면 
+    <hr color="blue">
+    <!-- anchor태그 바다와 관련 용어 많음 닻, 하이퍼 링크 설정> -->
+</body>
+</html>
+
+<!-- ppt 13p `14p 16p중요
+16p 특히 중요 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: yellow; /* 바탕색 지정*/
+            color: blue;    /* 글자색 지정 */
+            /* 이렇게 보여주는 걸 변경하는 거 전부다 브라우저에서 들어감 */
+        }
+            h1{
+                background: bisque;
+                font-style: oblique;
+                
+            }
+
+            a{
+                text-decoration: none;
+                color: rgb(142, 92, 31);
+                background: rgb(150, 237, 205);
+                font-size: 100px;
+                font-family: 궁서;
+                font-weight: bold;
+                font-style: italic;
+            }
+             #you {   /* 기본선택자(id선택,하나만 선택)-- #id명 */
+                    color: lime;
+                }
+                .we {/*기본선택자(cloass선택, 여러개 선택!) --.class명*/
+                    border-radius: 50px;
+                }
+                .we2{
+                    font-size: 50px;
+                }
+  
+           
+        
+    </style>
+</head>
+<body>
+    <h1 class="we2">페이지 11입니다.</h1>
+    <h1 class="we">페이지 22입니다.</h1>
+    <h1 id="you" class="we2">페이지 33입니다.</h1>
+    <a class="we" href="page2.html">2페이지로</a>
+    <!-- id는 각 객체당 한번만 부여가능, class는 여러개 부여 가능
+    ex) h1 id="you" id="you2"-X 절대 불가능 
+        h1 id="you"class="we2" class="we" - o 가능함-->
+</body>
+</html>
