@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    
+    <script>
+      document.write("베스트셀러 링크 가기")
+
+    
+   </script>
+   <script>
+      $(function () {
+        //b1을 클릭했을 때 오른쪽에 있는 함수 내용을 실행해주세요!
+        $('#b1').click(function() {
+          //alert('b1클릭함.')
+          $.ajax({
+            url: "book1.html",
+            success : function(x) {
+              $('#d1').html(x)
+            }
+          })
+        }) //b1
+        $('#b2').click(function() {
+          $.ajax({
+            url:"book2.html",
+            success : function(x) {
+              $('#d2').html(x)
+            }
+          })
+        }) //b2
+        $('#b3').click(function() {
+          $.ajax({
+            url: "book3.html",
+            success : function(x) {
+              $('#d3').html(x)
+            }
+          })
+        }) //b3
+        $('#b4').click(function() {
+          $.ajax({
+            url: "book4.html",
+            success : function(x) {
+              $('#d4').html(x)
+            }
+          })
+        })
+      }); // $
+    </script>
+    </script>
+    <script>
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+        </script>
+       
+</head>
+<body>
+    <div id="dialog" title="로그인 하셨나요?">
+        <p>로그인 먼저 해주세요!!!</p>
+    </div>
+        <form action="보내는서버주소">
+            <table>
+              <tr>
+                <td>아이디</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>패스워드</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td>이메일 주소</td>
+                <td><input type="text"></td>
+              <tr>
+                <td colspan="2" align="center"><button>회원가입 처리 요청</button></td>
+              </tr>
+              
+            </table>
+            
+
+
+          </form>
+
+            
+      </div>
+      <button id="b1">교보문고</button>
+      <button id="b2">알라딘</button>
+      <button id="b3">영풍문고</button>
+      <button id="b3">예스24</button>
+      <hr>
+      <div id="d1" style="width: 400px; height: 100px; background: lime;"></div>
+      <div id="d2" style="width: 400px; height: 100px; background: yellow;"></div>
+      <div id="d3" style="width: 400px; height: 100px; background: pink;"></div>
+      <div id="d4" style="width: 400px; height: 100px; background: rgb(170, 113, 39);"></div>
+     <table>
+      <tr>
+        <td>
+      <img src="no.png" alt="" srcset="" width="300">
+    </td>
+        <td>
+      <img src="ok.jpg" alt="" srcset="" width="300">
+    </td>
+    </tr>
+    </table>
+</body>
+</html>
